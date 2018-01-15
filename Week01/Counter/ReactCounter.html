@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React getting started</title>
+  </head>
+  <body>
+    <!-- Root container for react components -->
+    <div id='root'></div>
+    
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    
+    <script type="text/babel">
+      class Counter extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {counter: 0};
+        }
+
+        buttonPressed = () => {
+          this.setState((prevState) => {
+            return {counter: prevState.counter + 1}
+          });
+        };
+
+          buttonPressed2 = () => {
+              this.setState((prevState) => {
+                  return {counter: prevState.counter - 1}
+              });
+          };
+
+          buttonPressed3 = () => {
+              this.setState({counter: 0}
+              );
+          };
+        
+        render() { 
+          return (
+            <div>
+              <div>Counter: {this.state.counter}</div>
+              <button onClick={this.buttonPressed}>+</button>
+                <button onClick={this.buttonPressed2}>-</button>
+                <button onClick={this.buttonPressed3}>Reset</button>
+            </div>
+          );
+        }
+      }
+      // Added copies of the counter object and surrounded it in a div so it only returns 1 object still.
+      ReactDOM.render(<div> <Counter /> <Counter /> <Counter /></div>, document.getElementById('root'));
+    </script>
+  </body>
+</html>
