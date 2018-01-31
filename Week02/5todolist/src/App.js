@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import TodoTable from "./TodoTable";
 
 class App extends Component {
     constructor(props) {
@@ -43,21 +44,7 @@ class App extends Component {
                         <input type="submit" value="Add"/>
                     </form>
                 </div>
-                <div>
-                    <table>
-                        <tr>
-                            <th>Description:</th>
-                            <th>Date:</th>
-                        </tr>
-                        {this.state.toDos.map((item, index) =>
-                            <tr key={index}>
-                                <td>{item.description}</td>
-                                <td>{item.date}</td>
-                                <td><button onClick={this.delete} id={index} >Delete</button></td>
-                            </tr>
-                        )}
-                    </table>
-                </div>
+                <TodoTable toDos={this.state.toDos} delete={this.delete}/>
             </div>
         );
     }
