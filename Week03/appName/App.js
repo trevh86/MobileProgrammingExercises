@@ -18,12 +18,11 @@ export default class App extends React.Component {
                 source={require('./Crabs.jpg')}/>
                 <TextInput style={{width: 200, borderColor: 'gray', borderWidth: 1}}
                            onChangeText={(text) => this.setState({text})}
-                           value={this.state.text}></TextInput>
+                           value={this.state.text}/>
                 <Button onPress={this.buttonPressed} title="Press me"/>
             </View>
         );
     }
-hjgg
 }
 
 const styles = StyleSheet.create({
