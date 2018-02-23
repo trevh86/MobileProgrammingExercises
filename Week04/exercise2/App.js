@@ -5,13 +5,14 @@ export default class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {text: "Guess a number between 1-100", guesses: 0, number: 0, answer: 0, lowHigh: ""}
+        this.state = {text: "Guess a number between 1-100", guesses: 1, number: 0, answer: 0, lowHigh: ""}
     }
 
     componentDidMount() {
         this.randomNumber();
     };
 
+    // THIS Notation wouldn't work correctly. Used If, else instead.
     // HighOrLow = () => {
     //     parseInt(this.state.answer) > this.state.number
     //         ? this.setState({lowHigh: "too high"})
@@ -31,6 +32,8 @@ export default class App extends React.Component {
     //     })
     // };
 
+
+    // TODO: state of guesses is misrepresented as 1 less than the current state in the alert.
     guess = () => {
         this.setState((prevState) => {
             return {guesses: prevState.guesses + 1}
