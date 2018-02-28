@@ -5,7 +5,7 @@ export default class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {text: "Guess a number between 1-100", guesses: 1, number: 0, answer: 0, lowHigh: ""}
+        this.state = {text: "Guess a number between 1-100", guesses: 0, number: 0, answer: 0, lowHigh: ""}
     }
 
     componentDidMount() {
@@ -40,7 +40,7 @@ export default class App extends React.Component {
         });
         if (parseInt(this.state.answer) === this.state.number) {
             this.setState({text: "Correct"});
-            Alert.alert(`You guessed the number in ${this.state.guesses} guesses`, "")
+            Alert.alert(`You guessed the number in ${this.state.guesses +1} guesses`, "")
         } else if (parseInt(this.state.answer) > this.state.number) {
             this.setState({text: `Your guess ${this.state.answer} is too high`})
         } else if (parseInt(this.state.answer) < this.state.number) {
