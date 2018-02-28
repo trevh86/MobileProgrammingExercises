@@ -26,14 +26,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercise3/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="119" column="42" lean-forward="false" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+            <state relative-caret-position="170">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="22" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exercise4/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,6 +61,7 @@
         <option value="$PROJECT_DIR$/exercise1/App.js" />
         <option value="$PROJECT_DIR$/exercise2/App.js" />
         <option value="$PROJECT_DIR$/exercise3/App.js" />
+        <option value="$PROJECT_DIR$/exercise4/App.js" />
       </list>
     </option>
   </component>
@@ -96,12 +107,7 @@
             <path>
               <item name="Week04" type="b2602c69:ProjectViewProjectNode" />
               <item name="Week04" type="462c0819:PsiDirectoryNode" />
-              <item name="exercise1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Week04" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Week04" type="462c0819:PsiDirectoryNode" />
-              <item name="exercise3" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -142,12 +148,12 @@
       <updated>1518526005082</updated>
       <workItem from="1518526006495" duration="19934000" />
       <workItem from="1519231716752" duration="15212000" />
-      <workItem from="1519716378058" duration="18480000" />
+      <workItem from="1519716378058" duration="22261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53626000" />
+    <option name="totallyTimeSpent" value="57407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -261,11 +267,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exercise3/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="119" column="42" lean-forward="false" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+        <state relative-caret-position="170">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="22" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise4/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

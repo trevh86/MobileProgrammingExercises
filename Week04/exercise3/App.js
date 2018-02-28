@@ -53,7 +53,7 @@ export default class App extends React.Component {
                                onChangeText={(number2) => this.setState({number2})}/>
                 </View>
                 <View style={styles.buttons}>
-                    <Button onPress={this.addition} title="+" name="+"/>
+                    <Button onPress={this.addition} title="+"/>
                     <Button onPress={this.subtraction} title="-"/>
                     <Button onPress={this.multiplication} title="*"/>
                     <Button onPress={this.division} title="/"/>
@@ -64,7 +64,7 @@ export default class App extends React.Component {
                                   {item.number1} {item.sign} {item.number2} = {item.answer}
                               </Text>}/>
                 </View>
-            </View>// TODO: FlatList is not set up correctly. Don't need text prop?
+            </View>
         );
     }
 
