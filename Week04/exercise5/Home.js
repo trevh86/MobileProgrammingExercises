@@ -1,52 +1,23 @@
 import React from 'react';
-import {StyleSheet, Button, Text, FlatList, TextInput, View} from 'react-native';
+import {Button, Text, TextInput, View} from 'react-native';
+import {StackNavigator} from 'react-navigation';
+import {styles} from "./App";
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#000',
-    },
-    container2: {
-        flex: 1,
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        backgroundColor: '#000',
-    },
-    text: {
-        color: '#fff'
-    },
-    textInput: {
-        width: 200,
-        borderColor: '#fff',
-        borderWidth: 1,
-        color: 'white',
-    },
-    buttons: {
-        flex: 1,
-        backgroundColor: '#000000',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-around',
-        margin: 0,
-        padding: 0,
-    },
-    keyboard: {
-        flex: 2,
-    },
-});
+export default class Home extends React.Component {
+    static navigationOptions = {title: 'Home',};
 
-export default class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {number1: 0, number2: 0, answer: 0, history: [], count: 0}
     }
 
     render() {
+        const {navigate} = this.props.navigation;
         return (
             <View style={styles.container}>
                 <View style={styles.container2}>
-
-                    <Text style={{color: '#FFF'}}>{this.state.answer}</Text>
+                    <Text style={styles.text}>Answer:</Text>
+                    <Text style={styles.text}>{this.state.answer}</Text>
                     <TextInput style={styles.textInput} keyboardType={"phone-pad"}
                                onChangeText={(number1) => this.setState({number1})}/>
                     <TextInput style={styles.textInput} keyboardType={"phone-pad"}
@@ -57,12 +28,9 @@ export default class App extends React.Component {
                     <Button onPress={this.subtraction} title="-"/>
                     <Button onPress={this.multiplication} title="*"/>
                     <Button onPress={this.division} title="/"/>
+                    <Button onPress={() => navigate('History', {history: this.state.history})} title='History'/>
                 </View>
                 <View style={styles.keyboard}>
-                    <FlatList data={this.state.history}
-                              renderItem={({item}) => <Text style={styles.text}>
-                                  {item.number1} {item.sign} {item.number2} = {item.answer}
-                              </Text>}/>
                 </View>
             </View>
         );
