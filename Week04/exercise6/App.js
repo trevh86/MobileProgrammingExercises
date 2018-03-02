@@ -14,19 +14,21 @@ export default class App extends React.Component {
     };
 
     async addHighScore() {
-        this.setState({highScore: this.state.guesses + 1});
-        const hScore = this.state.highScore;
-        try {
-            await AsyncStorage.setItem('highScore', JSON.stringify(hScore));
-        } catch (error) {
-            Alert.alert('Error saving data', '');
+        if (this.state.guesses + 1 < this.state.highScore) {
+            this.setState({highScore: this.state.guesses + 1});
+            const hScore = this.state.highScore;
+            try {
+                await AsyncStorage.setItem('highScore', JSON.stringify(hScore));
+            } catch (error) {
+                Alert.alert('Error saving data', '');
+            }
         }
     }
 
     async getHighScore() {
         try {
             let oldHighScore = await AsyncStorage.getItem('highScore');
-            this.setState({highScore: oldHighScore});
+            this.setState({highScore: parseInt(oldHighScore)});
         } catch (error) {
             Alert.alert('Error reading data', '');
         }
@@ -47,6 +49,7 @@ export default class App extends React.Component {
         } else {
             this.setState({text: "Invalid guess"})
         }
+        this.clear();
     };
 
     randomNumber = () => {
@@ -56,8 +59,12 @@ export default class App extends React.Component {
     };
 
     newGame = () => {
-        this.setState({text: "Guess a number between 1-100", guesses: 0, number: 0, answer: 0, highScore: 0})
+        this.setState({text: "Guess a number between 1-100", guesses: 0, number: 0, answer: 0});
         this.randomNumber();
+    };
+
+    clear = () => {
+        this.textInputRef.clear();
     };
 
     render() {
@@ -65,7 +72,7 @@ export default class App extends React.Component {
             <View style={styles.container}>
                 <Text style={styles.text}>{this.state.text}</Text>
                 <Button title="MAKE GUESS" onPress={this.guess}/>
-                <TextInput style={styles.textInput} keyboardType={"phone-pad"}
+                <TextInput ref={ref => this.textInputRef = ref} style={styles.textInput} keyboardType={"phone-pad"}
                            onChangeText={(answer) => this.setState({answer})}/>
                 <Text style={styles.text}>High Score: {this.state.highScore} guesses</Text>
                 <Button title='NEW GAME' onPress={this.newGame}/>
