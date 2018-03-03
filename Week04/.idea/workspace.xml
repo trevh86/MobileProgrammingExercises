@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6398be0-d1eb-49f7-a207-a2ec1ac370ba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/exercise6/App.js" afterPath="$PROJECT_DIR$/exercise6/App.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/exercise7/App.js" afterPath="$PROJECT_DIR$/exercise7/App.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,17 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/exercise6/App.js">
+      <file leaf-file-name="History.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exercise5/History.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="72" column="66" lean-forward="true" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
+            <state relative-caret-position="17">
+              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exercise7/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#1906#2019#0" expanded="false" />
-                <element signature="e#2042#2175#0" expanded="false" />
-                <element signature="e#2196#2238#0" expanded="false" />
-                <element signature="e#2877#3180#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -60,6 +67,7 @@
         <option value="$PROJECT_DIR$/exercise5/Home.js" />
         <option value="$PROJECT_DIR$/exercise5/History.js" />
         <option value="$PROJECT_DIR$/exercise6/App.js" />
+        <option value="$PROJECT_DIR$/exercise7/App.js" />
       </list>
     </option>
   </component>
@@ -108,7 +116,7 @@
             <path>
               <item name="Week04" type="b2602c69:ProjectViewProjectNode" />
               <item name="Week04" type="462c0819:PsiDirectoryNode" />
-              <item name="exercise6" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise7" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -156,12 +164,12 @@
       <workItem from="1518526006495" duration="19934000" />
       <workItem from="1519231716752" duration="15212000" />
       <workItem from="1519716378058" duration="26781000" />
-      <workItem from="1519901784314" duration="17663000" />
+      <workItem from="1519901784314" duration="26963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79590000" />
+    <option name="totallyTimeSpent" value="88890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -250,7 +258,7 @@
         <state relative-caret-position="493">
           <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding>
-            <element signature="e#0#26#0" expanded="false" />
+            <element signature="e#0#26#0" expanded="true" />
             <marker date="1519717860042" expanded="false" signature="2120:2138" ph="..." />
             <marker date="1519717860042" expanded="true" signature="2138:2450" ph="..." />
             <marker date="1519717860042" expanded="false" signature="2168:2181" ph="..." />
@@ -276,18 +284,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercise2/App.js">
+    <entry file="file://$PROJECT_DIR$/exercise5/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="50" column="6" lean-forward="false" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        <state relative-caret-position="731">
+          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding>
             <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise3/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1562">
+          <caret line="92" column="40" lean-forward="false" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise2/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
             <marker date="1519717860042" expanded="false" signature="2120:2138" ph="..." />
             <marker date="1519717860042" expanded="true" signature="2138:2450" ph="..." />
             <marker date="1519717860042" expanded="false" signature="2168:2181" ph="..." />
             <marker date="1519717860042" expanded="true" signature="2271:2443" ph="..." />
             <marker date="1519717860042" expanded="false" signature="2306:2324" ph="..." />
             <marker date="1519717860042" expanded="true" signature="2351:2400" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise1/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -300,12 +338,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercise1/App.js">
+    <entry file="file://$PROJECT_DIR$/exercise5/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
             <element signature="e#0#26#0" expanded="false" />
+            <element signature="e#259#897#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise6/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#1906#2019#0" expanded="false" />
+            <element signature="e#2042#2175#0" expanded="false" />
+            <element signature="e#2196#2238#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -318,47 +370,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercise5/Home.js">
+    <entry file="file://$PROJECT_DIR$/exercise7/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise5/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-            <element signature="e#259#897#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise3/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="92" column="40" lean-forward="false" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercise6/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="72" column="66" lean-forward="true" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
+        <state relative-caret-position="289">
+          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1906#2019#0" expanded="false" />
-            <element signature="e#2042#2175#0" expanded="false" />
-            <element signature="e#2196#2238#0" expanded="false" />
-            <element signature="e#2877#3180#0" expanded="false" />
           </folding>
         </state>
       </provider>
