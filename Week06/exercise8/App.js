@@ -44,7 +44,7 @@ export default class App extends React.Component {
 
     convert = () => {
         const inputNumber = this.state.input;
-        const currentRate = this.state.data[this.state.currencySelected]
+        const currentRate = this.state.data[this.state.currencySelected];
         const answer = inputNumber * currentRate;
         this.setState({convertedAmount: answer});
     };
@@ -52,7 +52,7 @@ export default class App extends React.Component {
     pickerItems = () => {
         let storeData = [];
         for (let currencyType in this.state.data) {
-            let pickerItem = <Picker.Item label={currencyType} value={currencyType} key={currencyType}/>
+            let pickerItem = <Picker.Item label={currencyType} value={currencyType} key={currencyType}/>;
             storeData.push(pickerItem);
         }
         return storeData;
