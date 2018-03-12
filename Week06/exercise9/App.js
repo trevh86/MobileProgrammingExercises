@@ -33,7 +33,7 @@ export default class App extends React.Component {
                                     title={this.state.title}/>
                 </MapView>
                 <KeyboardAvoidingView behavior="padding">
-                    <TextInput
+                    <TextInput value={this.state.location}
                         onChangeText={(location) => this.setState({location})}/>
                     <Button title="Search" onPress={this.search}/>
                 </KeyboardAvoidingView>
@@ -42,11 +42,19 @@ export default class App extends React.Component {
     }
 
     search = () => {
-        const url = 'AIzaSyAwlxcyyOz3ZJWv1JJQ5g7YFOkWH9sTBoQ'
+        const url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' +
+            this.state.location +
+            '?&key=AIzaSyBMwkVNlSU7MFCdNYmjEja_Dv30l7jVNuE';
         fetch(url)
             .then((response) => response.json())
             .then((responseJson) => {
-                this.setState({})
+                this.setState({
+                    location: responseJson.results[0].formatted_address,
+                    latitude: responseJson.results[0].geometry.location.lat,
+                    longitude: responseJson.results[0].geometry.location.lng,
+                    latitudeDelta: responseJson.results[0].geometry.viewport.northeast.lat - responseJson.results[0].geometry.viewport.southwest.lat,
+                    longitudeDelta: responseJson.results[0].geometry.viewport.northeast.lng - responseJson.results[0].geometry.viewport.southwest.lng,
+                })
             })
             .catch((error) => {
                 Alert.alert(error);
