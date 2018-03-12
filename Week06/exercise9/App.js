@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, TextInput, Button, KeyboardAvoidingView} from 'react-native';
+import {StyleSheet, View, TextInput, Button, KeyboardAvoidingView, Alert} from 'react-native';
 import {MapView} from 'expo';
 
 export default class App extends React.Component {
@@ -11,7 +11,7 @@ export default class App extends React.Component {
             longitude: 24.934392,
             latitudeDelta: 0.0322,
             longitudeDelta: 0.0221,
-            title: ''
+            title: 'Haaga-Helia'
         }
     }
 
@@ -42,7 +42,15 @@ export default class App extends React.Component {
     }
 
     search = () => {
-        return null;
+        const url = 'AIzaSyAwlxcyyOz3ZJWv1JJQ5g7YFOkWH9sTBoQ'
+        fetch(url)
+            .then((response) => response.json())
+            .then((responseJson) => {
+                this.setState({})
+            })
+            .catch((error) => {
+                Alert.alert(error);
+            })
     }
 }
 
