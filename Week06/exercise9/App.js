@@ -50,6 +50,7 @@ export default class App extends React.Component {
             .then((responseJson) => {
                 this.setState({
                     location: responseJson.results[0].formatted_address,
+                    title: responseJson.results[0].formatted_address,
                     latitude: responseJson.results[0].geometry.location.lat,
                     longitude: responseJson.results[0].geometry.location.lng,
                     latitudeDelta: responseJson.results[0].geometry.viewport.northeast.lat - responseJson.results[0].geometry.viewport.southwest.lat,
